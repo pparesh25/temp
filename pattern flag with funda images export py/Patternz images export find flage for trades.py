@@ -86,18 +86,24 @@ for index, row in df.iterrows():
     Current Market Price: {stock_fundamentals['Current Price']}
     Intrinsic Value: {stock_fundamentals['Intrinsic Value']}
     Market Capitalization: {stock_fundamentals['Market Capitalization']}
+    Operating margin: {stock_fundamentals['OPM']}
     FII Holding: {stock_fundamentals['FII holding']}
     DII Holding: {stock_fundamentals['DII holding']}
     Promoter Holding: {stock_fundamentals['Promoter holding']}
+    Public holding: {stock_fundamentals['Public holding']}
     Price to Book Value: {stock_fundamentals['Price to book value']}
+    Industry PBV: {stock_fundamentals['Industry PBV']}
     EPS: {stock_fundamentals['EPS']}
     P/E Ratio: {stock_fundamentals['Price to Earning']}
+    Industry PE: {stock_fundamentals['Industry PE']}
     Debt to equity: {stock_fundamentals['Debt to equity']}
     Sales growth 5Years: {stock_fundamentals['Sales growth 5Years']}
     Profit growth 5Years: {stock_fundamentals['Profit growth 5Years']}
     Pledged percentage: {stock_fundamentals['Pledged percentage']}
     Dividend yield: {stock_fundamentals['Dividend yield']}
-    Trading Volume Avg 3 Month: {stock_fundamentals['Avg 3 Mo. Volume']} 
+    Trading Volume Avg 3 Month: {stock_fundamentals['Avg 3 Mo. Volume']}
+    DMA 50: {stock_fundamentals['DMA 50']}
+    DMA 200: {stock_fundamentals['DMA 200']}
     """
     # Define font properties
     font_properties = {
