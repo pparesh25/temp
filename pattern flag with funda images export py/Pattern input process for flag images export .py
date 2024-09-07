@@ -10,6 +10,9 @@ import pandas as pd
 # Read the data from a CSV file
 df = pd.read_csv('input_file.csv', skiprows=10)
 
+# Convert the 'Stock' column to string
+df['Stock'] = df['Stock'].astype(str)
+
 # Remove NSE SME Stocks
 df = df[~df['Stock'].str.endswith('_SME.txt')]
 
