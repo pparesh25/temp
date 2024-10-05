@@ -156,11 +156,11 @@ def plot_save_chart(row):
         os.makedirs(folder_path)
 
     # Get the stock data file path
-    stock_file = os.path.join(r"C:\Patternsdata", stock + ".txt")
+    stock_file = os.path.join(r"C:\data", stock + ".txt")
 
     # Load the stock data from the text file
-    stock_data = pd.read_csv(stock_file, header=None, names=['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
-    stock_data['Date'] = pd.to_datetime(stock_data['Date'])
+    stock_data = pd.read_csv(stock_file, header=None, names=['symbol','Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
+    stock_data['Date'] = pd.to_datetime(stock_data['Date'], format='%Y%m%d')
     stock_data.set_index('Date', inplace=True)
 
     # Calculate EMAs
