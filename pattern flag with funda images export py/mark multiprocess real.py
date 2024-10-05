@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
     # Export the results to a CSV file
     #results.to_csv('output.csv', index=False)
-    with pd.ExcelWriter('output_file_mark.xlsx', engine='openpyxl', mode='a') as writer:
+    with pd.ExcelWriter('output_file_mark.xlsx', engine='openpyxl', mode='w') as writer:
         results.to_excel(writer, index=False, sheet_name='Mark_Data' )
     
     # Step 1: Read the existing Excel file into a DataFrame
